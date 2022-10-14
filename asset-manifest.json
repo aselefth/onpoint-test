@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/onpoint-test/static/css/main.65fdd559.css",
+    "main.js": "/onpoint-test/static/js/main.fe374125.js",
+    "static/media/bg.png": "/onpoint-test/static/media/bg.10f1351ec62b3e8aa96e.png",
+    "static/media/pink_sperm_1.png": "/onpoint-test/static/media/pink_sperm_1.5d760b45d24baede9231.png",
+    "static/media/Layer 4.png": "/onpoint-test/static/media/Layer 4.77e67e0ebf40d9cd675e.png",
+    "static/media/bacteria.png": "/onpoint-test/static/media/bacteria.b632ead6710025dd8a02.png",
+    "static/media/Layer 7.png": "/onpoint-test/static/media/Layer 7.42a7d83ba9b8c5f50bff.png",
+    "static/media/Layer 5.png": "/onpoint-test/static/media/Layer 5.ad0f14de02bc5e42e1dc.png",
+    "static/media/home.svg": "/onpoint-test/static/media/home.c12196810d08fc044477897a75380a23.svg",
+    "index.html": "/onpoint-test/index.html",
+    "main.65fdd559.css.map": "/onpoint-test/static/css/main.65fdd559.css.map",
+    "main.fe374125.js.map": "/onpoint-test/static/js/main.fe374125.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65fdd559.css",
+    "static/js/main.fe374125.js"
+  ]
+}
