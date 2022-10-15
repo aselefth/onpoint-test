@@ -3,6 +3,7 @@ import {useState, TouchEvent} from 'react';
 import FirstPage from '../components/FirstPage';
 import SecondPage from './SecondPage';
 import home from '../assets/images/home.svg';
+import ThirdPage from './ThirdPage';
 
 
 export default function MainPage () {
@@ -61,6 +62,7 @@ export default function MainPage () {
                 
                 <FirstPage setCurrPage={handleChangeNextPage}/>
                 <SecondPage currPage={currPage}/>
+                <ThirdPage />
            </div>
         </div>
     )

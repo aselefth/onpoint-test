@@ -1,0 +1,181 @@
+.hero {
+  position: relative;
+  padding: 157px 70px 550px 138px;
+  font-family: "DIN Pro";
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  .bottle {
+    position: absolute;
+    width: 230px;
+    left: 50px;
+    top: 100px;
+    z-index: 10;
+  }
+  .bubble__container {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 70px;
+    bottom: 100px;
+    animation: bubble 5s infinite;
+    z-index: 11;
+  }
+  .bubble__container__second {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: 170px;
+    bottom: 300px;
+    animation: bubble 7s ease infinite;
+  }
+
+  .bubble__container__third {
+    width: 130px;
+    height: 200px;
+    position: absolute;
+    left: 190px;
+    top:20%;
+    animation: bubble 5s ease infinite;
+    z-index: 11;
+  }
+
+  .bubble__container__fifth {
+    width: 70px;
+    height: 200px;
+    position: absolute;
+    left: 10px;
+    top:50%;
+    animation: bubble 4s ease-in infinite;
+    z-index: 11;
+  }
+
+  .bubble__container__fourth {
+    width: 270px;
+    height: 200px;
+    position: absolute;
+    left: 190px;
+    top:85%;
+    animation: bubble 11s ease infinite;
+    z-index: 11;
+  }
+
+  .bubble {
+    width: 60%;
+  }
+
+  @keyframes bubble {
+    50% {
+      transform: scale(.95) translate(10px, 10px);
+    }
+  }
+
+  .hero__header {
+    text-transform: uppercase;
+    padding-left:230px;
+    p {
+      font-size: 32px;
+    }
+    h1 {
+      font-size: 90px;
+      font-weight: 400;
+      letter-spacing: 15px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .hero__content {
+    font-size: 28px;
+    display: flex;
+    gap: 30px;
+
+    .hero__content__left {
+      position: relative;
+      min-height: 100%;
+      padding: 50px 40px 40px 200px;
+      background: white;
+      border-radius: 40px;
+      box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+
+      .content__left__logo {
+        position: absolute;
+        bottom: 260px;
+        
+        img {
+          width: 70px;
+        }
+      }
+
+      .content__left__wrapper {
+        width: 270px;
+        position: relative;
+      }
+    }
+
+    .hero__content__right {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 55px;
+
+      .content__right__logo {
+        position: absolute;
+        bottom: 260px;
+        left: 40px;
+
+        img {
+          width: 70px;
+        }
+      }
+
+      .content__right__top {
+        padding: 50px 40px 40px 40px;
+      background: white;
+      border-radius: 40px;
+      box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+      }
+      
+      .button {
+        font-family: 'Gilroy Light';
+        padding-left: 10px;
+        width: 289px;
+        height: 85px;
+        font-size: 28px;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 15px;
+        border-radius: 45px;
+        border: none;
+        background: #ff6a9f;
+        text-transform: none;
+
+        .arrow {
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          background: linear-gradient(110deg, #a14867, #ff6a9f, #ec98b5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .arrow__black {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
