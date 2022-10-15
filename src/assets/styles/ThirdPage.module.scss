@@ -6,12 +6,123 @@
   flex-direction: column;
   gap: 80px;
 
+
+  // modal -----------
+
+  .modal__wrapper {
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(17, 17, 17, .5);
+    animation: modal .3s ease-in;
+
+    @keyframes modal {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .modal {
+      z-index: 12;
+      position: absolute;
+      top: 135px;
+      left: 180px;
+      bottom: 80px;
+      right: 70px;
+      border-radius: 35px;
+      background-color: white;
+      padding: 195px;
+
+      .close_modal {
+        z-index: 100;
+        position: absolute;
+        top: 30px;
+        right: 5px;
+        width: 40px;
+        height: 40px;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 2px;
+          height: 35px;
+          background-color: rgb(63, 63, 63);
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 2px;
+          height: 35px;
+          background-color: rgb(63, 63, 63);
+          transform: rotate(-45deg);
+        }
+      }
+
+      .modal__page_hidden {
+        opacity: 0;
+      }
+
+      .modal__page {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .modal__page__element {
+          font-size: 1.2rem;
+          display: flex;
+          flex-direction: column;
+
+          span {
+            font-weight: bold;
+            color: rgb(152, 199, 214);
+          }
+        }
+      }
+
+      .pagination {
+          position: absolute;
+          bottom: 20px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-weight: 300;
+          font-size: 2rem;
+
+          p {
+            margin-top: 4px;
+          }
+
+          .active {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #ff6a9f;
+          }
+
+          .nonactive {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 1px solid black;
+          }
+      }
+    }
+  }
+
   .bottle {
     position: absolute;
     width: 230px;
     left: 50px;
     top: 100px;
-    z-index: 10;
+    z-index: 15;
   }
   .bubble__container {
     width: 150px;
@@ -20,7 +131,7 @@
     left: 70px;
     bottom: 100px;
     animation: bubble 5s infinite;
-    z-index: 11;
+    z-index: 16;
   }
   .bubble__container__second {
     width: 250px;
@@ -29,6 +140,7 @@
     left: 170px;
     bottom: 300px;
     animation: bubble 7s ease infinite;
+    z-index: 14;
   }
 
   .bubble__container__third {
@@ -38,7 +150,7 @@
     left: 190px;
     top:20%;
     animation: bubble 5s ease infinite;
-    z-index: 11;
+    z-index: 16;
   }
 
   .bubble__container__fifth {
@@ -48,7 +160,7 @@
     left: 10px;
     top:50%;
     animation: bubble 4s ease-in infinite;
-    z-index: 11;
+    z-index: 16;
   }
 
   .bubble__container__fourth {
@@ -58,7 +170,7 @@
     left: 190px;
     top:85%;
     animation: bubble 11s ease infinite;
-    z-index: 11;
+    z-index: 16;
   }
 
   .bubble {
@@ -72,11 +184,15 @@
   }
 
   .hero__header {
+    width: 700px;
+    z-index: 11;
     text-transform: uppercase;
     padding-left:230px;
+
     p {
       font-size: 32px;
     }
+
     h1 {
       font-size: 90px;
       font-weight: 400;
