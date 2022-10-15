@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   padding: 157px 70px 550px 138px;
-  font-family: "DIN Pro";
+  font-family: 'Raleway';
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -199,13 +199,14 @@
       letter-spacing: 15px;
 
       span {
-        font-weight: 600;
+        font-weight: 700;
       }
     }
   }
 
   .hero__content {
-    font-size: 28px;
+    font-size: 26px;
+    line-height: 32px;
     display: flex;
     gap: 30px;
 
