@@ -1,0 +1,68 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background: white;
+  .wrapper__navigation {
+    position: fixed;
+    top: 50px;
+    left: 130px;
+    z-index: 100;
+    font-family: "DIN Pro";
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+
+    img {
+      height: 20px;
+      position: relative;
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 3072px;
+  background-image: url('./assets//images/bg.png');
+  background-repeat: no-repeat;
+  background-size: 3072px 768px;
+  height: 100%;
+  transition: transform .5s;
+  display: flex;
+
+  
+}
+
+.container {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: .4rem;
+}
+
+::-webkit-scrollbar-track {
+  background:  black;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: pink;
+  width: .6rem;
+  border-radius: 6px;
+}

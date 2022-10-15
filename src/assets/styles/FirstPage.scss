@@ -1,0 +1,188 @@
+.hero {
+  font-family: "DIN Pro";
+  padding: 157px 0 550px 138px;
+  text-transform: uppercase;
+
+
+  & .hero__welcome {
+    font-size: 27px;
+    padding-bottom: 10px;
+  }
+
+  & .hero__content {
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 120px;
+    position: relative;
+    z-index: 10;
+
+    span {
+      font-weight: 500;
+    }
+
+    .hero__content__bottom {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+
+      .button {
+        font-family: 'Gilroy Light';
+        padding-left: 10px;
+        width: 289px;
+        height: 85px;
+        font-size: 28px;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 15px;
+        border-radius: 45px;
+        border: none;
+        background: #ff6a9f;
+        text-transform: none;
+
+        .arrow {
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          background: linear-gradient(110deg, #a14867, #ff6a9f, #ec98b5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .arrow__black {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.bacteria__container {
+  position: absolute;
+  right: 52px;
+  top: 200px;
+  animation: bacteriaX 20s infinite;
+
+  img {
+    height: 113px;
+    width: 113px;
+    animation: bacteriaY 25s infinite;
+  }
+}
+
+.sperm__container {
+  position: absolute;
+  right: -150px;
+  top: 200px;
+  animation: spermX 25s infinite;
+  z-index: 10;
+
+  img {
+    height: 100px;
+    animation: spermY 25s infinite;
+    rotate: -10deg;
+  }
+}
+
+.sperm__blured {
+  rotate: 180deg;
+  right: 700px;
+  top: 600px;
+  filter: blur(8px);
+  img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.bacteriaLeft__container {
+  position: absolute;
+  left: -15px;
+  top: 50px;
+
+  img {
+    height: 140px;
+    animation: spermY 20s infinite;
+  }
+}
+
+.roundedBacteria__container {
+  position: absolute;
+  left: 85px;
+  bottom: 180px;
+  z-index: 9;
+
+  img {
+    height: 70px;
+    animation: spermY 20s infinite;
+  }
+}
+
+.roundedBacteria__blured {
+  top : 40px;
+  left: 900px;
+  filter: blur(9px);
+
+  img {
+    width: 40px;
+    height: 40px;
+    animation: bigBacteriaY 20s infinite;
+  }
+}
+
+.bigBacteria__container {
+  position: absolute;
+  right: 270px;
+  bottom: -30px;
+
+  img {
+    height: 120px;
+    animation: bigBacteriaY 20s infinite;
+  }
+}
+
+@keyframes bacteriaX {
+
+  50% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes bacteriaY {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(-100px) rotate(360deg);
+  }
+}
+
+@keyframes spermX {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateX(-90px) ;
+  }
+}
+
+@keyframes spermY {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(-10px) rotate(10deg);
+  }
+}
+
+@keyframes bigBacteriaY {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(-10px) rotate(10deg) scale(1.1);
+  }
+}
